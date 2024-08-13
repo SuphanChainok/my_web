@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+<!---->
+{% block contant %}
+<div class="container">
+  <h1>หน้าสำหรับทดสอบ</h1>
+
+  <table class="table caption-top">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in list %}
+      <tr>
+        <th scope="row">{{ forloop.counter }}</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock contant %} {% comment %} {% for i in list %}
+<div class="card" style="width: 18rem">
+  <img src="..." class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+{% endfor %} {% endcomment %}

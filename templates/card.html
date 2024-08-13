@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+<!---->
+{% block contant %}
+<div class="row">
+  {% for i in list %}
+  <div class="col-md-4 mb-4">
+    <div class="card" style="width: 100%">
+      <img
+        src="https://s359.kapook.com//pagebuilder/49a670a1-6769-448d-8261-20afe5e38c4b.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">ทุเรียนสด</h5>
+        <p class="card-text">ทุเรียนสุด "หอย"</p>
+        <a href="#" class="btn btn-primary">สั่งสินค้า</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock contant %}

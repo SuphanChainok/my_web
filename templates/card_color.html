@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+<!---->
+{% block contant %}
+<div class="container">
+  <h1>{{ color }}</h1>
+  <div class="row mt-4">
+    <div class="col"><a href="?color=all">ทั้งหมด</a></div>
+    <div class="col"><a href="?color=yellow">สีเหลือง</a></div>
+    <div class="col"><a href="?color=green">สีเขียว</a></div>
+    <div class="col"><a href="?color=blue">สีน้ำเงิน</a></div>
+  </div>
+  <div class="row">
+    {% if color == "all" or color == "blue" %}
+    <div class="col">
+      <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Primary card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    <!---->
+    {% if color == "all" or color == "yellow" %}
+    <div class="col">
+      <div class="card text-dark bg-warning mb-3" style="max-width: 18rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Warning card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    <!---->
+    {% if color == "all" or color == "green" %}
+    <div class="col">
+      <div class="card text-white bg-success mb-3" style="max-width: 18rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock contant %}
